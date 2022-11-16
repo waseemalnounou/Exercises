@@ -6,23 +6,23 @@ public class TestConvertStingToNumber
     public void Is_ConvertToNumber_Return_Valid_Number()
     {
         // Arrange
-        string firstNum = "1234";
+        string FirstNum = "1234";
         string NegNum = "-1234";
         string PosNum = "+1234";
-        string invalidNum1 = "+";
-        string invalidNum2 = "12AA";
+        string InvalidNum1 = "+";
+        string InvalidNum2 = "12AA";
 
         int expectedNum = 1234;
         int expectedNegativeNum = -1234;
         string expectedLengthError = "Input Length sould be greater than 0";
         string expectedInvalidNumberError = "Invalid Number";
 
-        StringAsNumber str1 = new StringAsNumber(firstNum);
+        StringAsNumber str1 = new StringAsNumber(FirstNum);
         StringAsNumber str2 = new StringAsNumber(PosNum);
         StringAsNumber str3 = new StringAsNumber(NegNum);
         StringAsNumber str4 = new StringAsNumber("");
-        StringAsNumber str5 = new StringAsNumber(invalidNum1);
-        StringAsNumber str6 = new StringAsNumber(invalidNum2);
+        StringAsNumber str5 = new StringAsNumber(InvalidNum1);
+        StringAsNumber str6 = new StringAsNumber(InvalidNum2);
 
         // Act 
         var num1 = str1.ConvertToNumber();
