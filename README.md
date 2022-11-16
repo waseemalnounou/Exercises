@@ -7,11 +7,13 @@ A lot of data is sent around the internet as text. But sometimes a function need
 Run the project:
 ### `cd Exercises`
  <br />
- ### `dotnet run --project ./Exercises/Exercises.csproj`
+ 
+### `dotnet run --project ./Exercises/Exercises.csproj`
+ 
  <br />
 Test:
  <br />
- ### `dotnet test`
+### `dotnet test`
  <br />
  To Access the endpoint: (https://localhost:7292/swagger/index.html)
  <br />
