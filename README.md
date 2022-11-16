@@ -7,11 +7,11 @@ A lot of data is sent around the internet as text. But sometimes a function need
 Run the project:
 
 cd Exercises
-
+ <br />
 dotnet run --project ./Exercises/Exercises.csproj
-
+ <br />
 Test:
-
+ <br />
 dotnet test
-
+ <br />
 -If i had more time i would test the api and try to call it in different input and test the returned result
