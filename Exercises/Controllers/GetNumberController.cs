@@ -22,7 +22,7 @@ public class ConvertStringToNumberController : ControllerBase
         if(input.Length > 0)
         {
         // check if input is number
-        Boolean isNumber =  Regex.IsMatch(input , @"^\d+$|^[+-]?\d+$");
+        Boolean isNumber =  Regex.IsMatch(input , @"^[+-]?\d+$");
         if (!isNumber){
             Response.StatusCode = StatusCodes.Status400BadRequest;
             return new JsonResult(new { error = "Invalid number"});
