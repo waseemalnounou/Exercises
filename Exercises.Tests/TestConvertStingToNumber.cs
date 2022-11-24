@@ -3,7 +3,7 @@ namespace Exercises.Utils;
 public class TestConvertStingToNumber
 {
     [Fact]
-    public void Is_ConvertToNumber_Return_Valid_Number()
+    public void Convert_Valid_Input_Return_Valid_Number()
     {
         // Arrange
         string FirstNum = "1234";
@@ -24,7 +24,7 @@ public class TestConvertStingToNumber
     }
 
     [Fact]
-    public void ConvertToNumber_Throughing_Error()
+    public void Convert_Invalid_Number_Throwing_Error()
     {
         // Arrange
         string InvalidNum1 = "+";
