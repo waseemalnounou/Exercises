@@ -1,16 +1,12 @@
 namespace Exercises.Utils;
 
 public class StringAsNumber {
-    string text;
-    public StringAsNumber(string text){
-        this.text = text;
-    }
 
-    public Boolean IsNum(char num){
+    public static Boolean IsNum(char num){
         return Char.IsDigit(num);
     }
 
-    public int ConvertToNumber(){
+    public static int ConvertToNumber(string text){
         Boolean isNegative = false;
         string newText = text;
         int number = 0;

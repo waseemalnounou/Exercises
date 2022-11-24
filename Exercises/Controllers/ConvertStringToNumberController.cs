@@ -27,16 +27,8 @@ public class ConvertStringToNumberController : ControllerBase
             Response.StatusCode = StatusCodes.Status400BadRequest;
             return new JsonResult(new { error = "Invalid number"});
         } else {
-            // check if there is sign without number
-            if((input[0] == '-' || input[0] == '+') && input.Length == 1){
-                Response.StatusCode = StatusCodes.Status400BadRequest;
-                return new JsonResult(new { error = "Invalid number"});
-            }
-
-            StringAsNumber str = new StringAsNumber(input);
-            var val = str.ConvertToNumber();
             Response.StatusCode = StatusCodes.Status200OK;
-            return new JsonResult(new { value = val});
+            return new JsonResult(new { value = StringAsNumber.ConvertToNumber(input)});
         }
     } else {
         Response.StatusCode = StatusCodes.Status400BadRequest;
